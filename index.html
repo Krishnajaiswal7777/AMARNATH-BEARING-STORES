@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Amarnath Bearing Stores - Hardware & Machinery Store in Sadarganj, Mariahu, Jaunpur.">
+<meta name="description"
+content="Amarnath Bearing Stores - Hardware & Machinery Store in Sadarganj, Mariahu, Jaunpur.">
+
 <meta name="theme-color" content="#080808">
 
 <title>Amarnath Bearing Stores | Since 1970</title>
@@ -27,8 +29,8 @@ html{
 
 body{
     background:#080808;
-    color:#ffffff;
-    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
     line-height:1.6;
 }
 
@@ -43,20 +45,17 @@ a{
     margin:auto;
 }
 
-/* =========================
-   COLORS
-========================= */
-
 :root{
     --gold:#e7b84b;
     --gold-light:#ffe08a;
     --black:#080808;
-    --dark:#111111;
+    --dark:#111;
     --card:#151515;
     --border:#292929;
-    --gray:#aaaaaa;
+    --gray:#aaa;
     --green:#20d56b;
 }
+
 
 /* =========================
    HEADER
@@ -69,10 +68,10 @@ header{
     width:100%;
     z-index:999;
 
-    background:rgba(5,5,5,0.82);
+    background:rgba(5,5,5,.84);
     backdrop-filter:blur(15px);
 
-    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .navbar{
@@ -122,19 +121,18 @@ nav a:hover{
 
 .menu-btn{
     display:none;
-    border:none;
     background:none;
-    color:white;
+    border:none;
+    color:#fff;
     font-size:28px;
-    cursor:pointer;
 }
+
 
 /* =========================
    HERO
 ========================= */
 
 .hero{
-
     min-height:850px;
 
     display:flex;
@@ -159,8 +157,6 @@ nav a:hover{
     max-width:800px;
 }
 
-/* LOGO */
-
 .hero-logo{
     width:120px;
     height:120px;
@@ -178,7 +174,7 @@ nav a:hover{
     border:1px solid rgba(231,184,75,.5);
 
     box-shadow:
-        0 0 40px rgba(231,184,75,.12);
+    0 0 40px rgba(231,184,75,.12);
 }
 
 .hero-logo img{
@@ -188,10 +184,9 @@ nav a:hover{
     border-radius:50%;
 }
 
-/* SINCE */
-
 .since{
     color:var(--gold);
+
     font-weight:bold;
 
     letter-spacing:4px;
@@ -200,8 +195,6 @@ nav a:hover{
 
     margin-bottom:18px;
 }
-
-/* TAG */
 
 .tag{
     color:var(--gold);
@@ -214,8 +207,6 @@ nav a:hover{
 
     margin-bottom:10px;
 }
-
-/* TITLE */
 
 .hero h1{
     font-size:clamp(45px,7vw,80px);
@@ -230,8 +221,6 @@ nav a:hover{
     color:var(--gold);
 }
 
-/* DESCRIPTION */
-
 .hero p{
     max-width:680px;
 
@@ -241,8 +230,6 @@ nav a:hover{
 
     margin-bottom:30px;
 }
-
-/* BUTTONS */
 
 .buttons{
     display:flex;
@@ -291,8 +278,6 @@ nav a:hover{
     background:rgba(0,0,0,.4);
 }
 
-/* HERO LOCATION */
-
 .hero-location{
     margin-top:24px;
 
@@ -300,6 +285,7 @@ nav a:hover{
 
     font-size:14px;
 }
+
 
 /* =========================
    STATS
@@ -343,8 +329,9 @@ nav a:hover{
     font-size:12px;
 }
 
+
 /* =========================
-   SECTION
+   SECTIONS
 ========================= */
 
 section{
@@ -379,6 +366,7 @@ section{
     color:#999;
 }
 
+
 /* =========================
    ABOUT
 ========================= */
@@ -406,7 +394,8 @@ section{
 
     border:1px solid var(--border);
 
-    box-shadow:0 25px 70px rgba(0,0,0,.5);
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.5);
 }
 
 .shop-photo img{
@@ -456,6 +445,7 @@ section{
     color:#ddd;
 }
 
+
 /* =========================
    PRODUCTS
 ========================= */
@@ -496,14 +486,18 @@ section{
     border-radius:50px;
 
     cursor:pointer;
+
+    transition:.3s;
 }
 
-.filter:hover,
+.filter:hover{
+    background:var(--gold);
+    color:#111;
+}
+
 .filter.active{
     background:var(--gold);
-
     color:#111;
-
     border-color:var(--gold);
 }
 
@@ -527,7 +521,8 @@ section{
     border-color:var(--gold);
 }
 
-/* PRODUCTS GRID */
+
+/* PRODUCT GRID */
 
 .products-grid{
     display:grid;
@@ -561,18 +556,17 @@ section{
     border-color:#80682d;
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.4);
+    0 20px 50px rgba(0,0,0,.4);
 }
 
 .product-image{
     height:250px;
 
-    background:white;
+    background:#fff;
 
     display:flex;
 
     align-items:center;
-
     justify-content:center;
 }
 
@@ -643,6 +637,7 @@ section{
     border-color:var(--gold);
 }
 
+
 /* =========================
    LOCATION
 ========================= */
@@ -659,8 +654,6 @@ section{
 
     gap:22px;
 }
-
-/* CONTACT CARD */
 
 .contact-card{
     background:#151515;
@@ -706,8 +699,6 @@ section{
     font-size:13px;
 }
 
-/* MAP */
-
 .map-card{
     background:#151515;
 
@@ -748,6 +739,7 @@ section{
     display:block;
 }
 
+
 /* =========================
    CTA
 ========================= */
@@ -784,6 +776,7 @@ section{
 .cta p{
     color:#999;
 }
+
 
 /* =========================
    FOOTER
@@ -830,8 +823,9 @@ footer{
     font-size:11px;
 }
 
+
 /* =========================
-   FLOATING WHATSAPP
+   WHATSAPP
 ========================= */
 
 .whatsapp-float{
@@ -859,8 +853,9 @@ footer{
     z-index:999;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.5);
+    0 10px 30px rgba(0,0,0,.5);
 }
+
 
 /* =========================
    MOBILE
@@ -987,6 +982,7 @@ footer{
 </style>
 </head>
 
+
 <body>
 
 
@@ -1000,20 +996,29 @@ footer{
 
 <a href="#home" class="logo-area">
 
-<img src="logo.webp" alt="Amarnath Bearing Stores Logo">
+<img
+src="logo.webp"
+alt="Amarnath Bearing Stores Logo">
 
 <div class="logo-text">
+
 AMARNATH<br>
+
 <span>BEARING STORES</span>
+
 </div>
 
 </a>
 
+
 <button
 class="menu-btn"
 onclick="toggleMenu()">
+
 ☰
+
 </button>
+
 
 <nav id="navigation">
 
@@ -1042,6 +1047,7 @@ onclick="toggleMenu()">
 
 <div class="container hero-content">
 
+
 <div class="hero-logo">
 
 <img
@@ -1050,51 +1056,81 @@ alt="Amarnath Bearing Stores">
 
 </div>
 
+
 <div class="since">
+
 SINCE 1970
+
 </div>
+
 
 <div class="tag">
+
 HARDWARE & MACHINERY STORE
+
 </div>
 
+
 <h1>
+
 AMARNATH
+
 <span>BEARING STORES</span>
+
 </h1>
 
+
 <p>
-Your trusted destination for pumps, flour mills,
-agricultural machinery and quality hardware products
+
+Your trusted destination for pumps,
+flour mills, agricultural machinery
+and quality hardware products
 in Mariahu, Jaunpur.
+
 </p>
 
+
 <div class="buttons">
+
 
 <a
 class="btn gold-btn"
 href="#products">
+
 🛠️ Explore Products
+
 </a>
+
 
 <a
 class="btn green-btn"
 target="_blank"
 href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores%2C%20I%20want%20a%20product%20enquiry.">
+
 💬 WhatsApp
+
 </a>
+
 
 <a
 class="btn dark-btn"
 href="tel:+918795214522">
+
 📞 Call Now
+
 </a>
 
+
 </div>
 
+
 <div class="hero-location">
-📍 Sadarganj, Mariahu, Jaunpur, Uttar Pradesh
+
+📍 Sadarganj, Mariahu,
+Jaunpur, Uttar Pradesh
+
 </div>
+
 
 </div>
 
@@ -1109,6 +1145,7 @@ href="tel:+918795214522">
 
 <div class="container stats-grid">
 
+
 <div class="stat">
 
 <strong>Since 1970</strong>
@@ -1116,6 +1153,7 @@ href="tel:+918795214522">
 <span>Trusted Experience</span>
 
 </div>
+
 
 <div class="stat">
 
@@ -1125,6 +1163,7 @@ href="tel:+918795214522">
 
 </div>
 
+
 <div class="stat">
 
 <strong>Machinery</strong>
@@ -1133,6 +1172,7 @@ href="tel:+918795214522">
 
 </div>
 
+
 <div class="stat">
 
 <strong>Easy Enquiry</strong>
@@ -1140,6 +1180,7 @@ href="tel:+918795214522">
 <span>Call / WhatsApp</span>
 
 </div>
+
 
 </div>
 
@@ -1154,6 +1195,7 @@ href="tel:+918795214522">
 
 <div class="container about-grid">
 
+
 <div class="shop-photo">
 
 <img
@@ -1162,47 +1204,74 @@ alt="Amarnath Bearing Stores Shop">
 
 </div>
 
+
 <div class="about-text">
 
 <div class="tag">
 ABOUT US
 </div>
 
+
 <h2>
+
 Your Local
 <span>Machinery Partner</span>
+
 </h2>
 
+
 <p>
+
 Welcome to Amarnath Bearing Stores,
-your trusted hardware and machinery store
-in Mariahu, Jaunpur.
+your trusted hardware and machinery
+store in Mariahu, Jaunpur.
+
 </p>
 
-<p>
-We provide quality machinery and equipment
-for farming, home and business requirements.
-</p>
 
 <p>
-Our range includes flour mills, pumps,
-sprayers, chaff cutters, pressure washers,
-power equipment and more.
+
+We provide quality machinery and
+equipment for farming, home and
+business requirements.
+
 </p>
+
+
+<p>
+
+Our range includes flour mills,
+pumps, sprayers, chaff cutters,
+pressure washers, power equipment
+and more.
+
+</p>
+
 
 <div class="chips">
 
-<span class="chip">FIELDMARSHAL</span>
+<span class="chip">
+FIELDMARSHAL
+</span>
 
-<span class="chip">DHARA</span>
+<span class="chip">
+DHARA
+</span>
 
-<span class="chip">HAVELLS</span>
+<span class="chip">
+HAVELLS
+</span>
 
-<span class="chip">BALWAAN</span>
+<span class="chip">
+BALWAAN
+</span>
 
-<span class="chip">EICHER</span>
+<span class="chip">
+EICHER
+</span>
 
 </div>
+
 
 </div>
 
@@ -1219,6 +1288,7 @@ power equipment and more.
 
 <div class="container">
 
+
 <div class="section-title">
 
 <div class="tag">
@@ -1226,13 +1296,17 @@ OUR PRODUCTS
 </div>
 
 <h2>
+
 Featured
 <span>Machinery</span>
+
 </h2>
 
 <p>
-Browse our products and contact us for
-current price, model and availability.
+
+Select a category to see
+only those products.
+
 </p>
 
 </div>
@@ -1240,39 +1314,62 @@ current price, model and availability.
 
 <div class="toolbar">
 
+
 <div class="filters">
+
 
 <button
 class="filter active"
+data-category="all"
 onclick="filterProducts('all',this)">
+
 All
+
 </button>
+
 
 <button
 class="filter"
+data-category="flour"
 onclick="filterProducts('flour',this)">
+
 Flour Mills
+
 </button>
+
 
 <button
 class="filter"
+data-category="pump"
 onclick="filterProducts('pump',this)">
+
 Pumps
+
 </button>
+
 
 <button
 class="filter"
+data-category="agri"
 onclick="filterProducts('agri',this)">
+
 Agriculture
+
 </button>
+
 
 <button
 class="filter"
+data-category="machine"
 onclick="filterProducts('machine',this)">
+
 Machines
+
 </button>
+
 
 </div>
+
 
 <input
 class="search"
@@ -1281,13 +1378,16 @@ type="text"
 placeholder="🔎 Search product..."
 oninput="renderProducts()">
 
+
 </div>
 
 
 <div
 class="products-grid"
 id="productsGrid">
+
 </div>
+
 
 </div>
 
@@ -1302,6 +1402,7 @@ id="productsGrid">
 
 <div class="container">
 
+
 <div class="section-title">
 
 <div class="tag">
@@ -1309,13 +1410,17 @@ FIND US
 </div>
 
 <h2>
+
 Our
 <span>Location</span>
+
 </h2>
 
 <p>
-Visit Amarnath Bearing Stores at
-Sadarganj, Mariahu, Jaunpur.
+
+Visit Amarnath Bearing Stores
+at Sadarganj, Mariahu, Jaunpur.
+
 </p>
 
 </div>
@@ -1324,12 +1429,13 @@ Sadarganj, Mariahu, Jaunpur.
 <div class="location-grid">
 
 
-<!-- CONTACT CARD -->
-
 <div class="contact-card" id="contact">
 
+
 <h3>
+
 Amarnath Bearing Stores
+
 </h3>
 
 
@@ -1341,12 +1447,18 @@ Amarnath Bearing Stores
 
 <div>
 
-<strong>Address</strong>
+<strong>
+Address
+</strong>
 
 <span>
-Rajia Complex, Near Pawan Talkies,
+
+Rajia Complex,
+Near Pawan Talkies,
 Sadar Ganj, Mariahu,
-Jaunpur, Uttar Pradesh - 222161
+Jaunpur, Uttar Pradesh
+- 222161
+
 </span>
 
 </div>
@@ -1362,12 +1474,18 @@ Jaunpur, Uttar Pradesh - 222161
 
 <div>
 
-<strong>Phone</strong>
+<strong>
+Phone
+</strong>
 
 <span>
+
 8795214522
+
 <br>
+
 7800081251
+
 </span>
 
 </div>
@@ -1383,10 +1501,15 @@ Jaunpur, Uttar Pradesh - 222161
 
 <div>
 
-<strong>WhatsApp</strong>
+<strong>
+WhatsApp
+</strong>
 
 <span>
-Send us your product enquiry
+
+Send us your
+product enquiry
+
 </span>
 
 </div>
@@ -1394,7 +1517,9 @@ Send us your product enquiry
 </div>
 
 
-<div class="buttons" style="margin-top:22px">
+<div
+class="buttons"
+style="margin-top:22px;">
 
 
 <a
@@ -1419,12 +1544,12 @@ href="https://wa.me/918795214522">
 
 </div>
 
+
 </div>
 
 
-<!-- MAP -->
-
 <div class="map-card">
+
 
 <div class="map-header">
 
@@ -1440,11 +1565,17 @@ Mariahu • Jaunpur
 
 
 <iframe
+
 class="map"
+
 src="https://www.google.com/maps?q=Amarnath%20Bearing%20Stores%2C%20Rajia%20Complex%2C%20Near%20Pawan%20Talkies%2C%20Sadar%20Ganj%2C%20Mariahu%2C%20Jaunpur%2C%20Uttar%20Pradesh%20222161&output=embed"
+
 loading="lazy"
+
 allowfullscreen>
+
 </iframe>
+
 
 </div>
 
@@ -1464,6 +1595,7 @@ allowfullscreen>
 
 <div class="container cta-content">
 
+
 <div>
 
 <div class="tag">
@@ -1475,8 +1607,10 @@ Looking for a machine?
 </h2>
 
 <p>
-Message us on WhatsApp for price,
-availability and product details.
+
+Message us on WhatsApp for
+price, availability and details.
+
 </p>
 
 </div>
@@ -1491,6 +1625,7 @@ href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores%2C%20I
 
 </a>
 
+
 </div>
 
 </section>
@@ -1504,6 +1639,7 @@ href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores%2C%20I
 
 <div class="container footer">
 
+
 <div class="footer-brand">
 
 <img
@@ -1516,10 +1652,15 @@ AMARNATH BEARING STORES
 
 </div>
 
+
 <p>
+
 © <span id="year"></span>
-Amarnath Bearing Stores • Mariahu, Jaunpur
+Amarnath Bearing Stores
+• Mariahu, Jaunpur
+
 </p>
+
 
 </div>
 
@@ -1547,1796 +1688,292 @@ aria-label="WhatsApp">
 
 <script>
 
+
+/* =========================
+   PRODUCT DATA
+
+   IMPORTANT:
+   category values must match
+   the filter button values.
+========================= */
+
 const products = [
 
 {
-name:"Havells Pump",
-category:"pump",
-type:"PUMPS",
-image:"havells-pump.jpg"
+    name:"Havells Pump",
+    category:"pump",
+    type:"PUMPS",
+    image:"havells-pump.jpg"
 },
 
 {
-name:"Dhara Raga",
-category:"flour",
-type:"FLOUR MILL",
-image:"dhara-raga.png"
+    name:"Dhara Raga",
+    category:"flour",
+    type:"FLOUR MILL",
+    image:"dhara-raga.png"
 },
 
 {
-name:"Dhara Signature Series",
-category:"flour",
-type:"FLOUR MILL",
-image:"dhara-signature.jpg"
+    name:"Dhara Signature Series",
+    category:"flour",
+    type:"FLOUR MILL",
+    image:"dhara-signature.jpg"
 },
 
 {
-name:"Balwaan Chaff Cutter CH-200",
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-chaff-cutter.jpg"
+    name:"Balwaan Chaff Cutter CH-200",
+    category:"agri",
+    type:"AGRICULTURE",
+    image:"balwaan-chaff-cutter.jpg"
 },
 
 {
-name:"Balwaan Pressure Washer PW-350",
-category:"machine",
-type:"PRESSURE WASHER",
-image:"balwaan-pressure-washer.webp"
+    name:"Balwaan Pressure Washer PW-350",
+    category:"machine",
+    type:"PRESSURE WASHER",
+    image:"balwaan-pressure-washer.webp"
 },
 
 {
-name:"Balwaan Water Pump WP-33R",
-category:"pump",
-type:"WATER PUMP",
-image:"balwaan-water-pump.webp"
+    name:"Balwaan Water Pump WP-33R",
+    category:"pump",
+    type:"WATER PUMP",
+    image:"balwaan-water-pump.webp"
 },
 
 {
-name:"Balwaan Battery Sprayer BS-22D",
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-battery-sprayer.jpg"
+    name:"Balwaan Battery Sprayer BS-22D",
+    category:"agri",
+    type:"AGRICULTURE",
+    image:"balwaan-battery-sprayer.jpg"
 },
 
 {
-name:"Balwaan Power Weeder BP-750E
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-power-weeder.webp"
+    name:"Balwaan Power Weeder BP-750E",
+    category:"agri",
+    type:"AGRICULTURE",
+    image:"balwaan-power-weeder.webp"
 }
 
 ];
 
 
-let currentCategory = "all";
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Amarnath Bearing Stores - Hardware & Machinery Store in Sadarganj, Mariahu, Jaunpur.">
-<meta name="theme-color" content="#080808">
-
-<title>Amarnath Bearing Stores | Since 1970</title>
-
-<style>
-
-/* =========================
-   GLOBAL
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#080808;
-    color:#ffffff;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/* =========================
-   COLORS
-========================= */
-
-:root{
-    --gold:#e7b84b;
-    --gold-light:#ffe08a;
-    --black:#080808;
-    --dark:#111111;
-    --card:#151515;
-    --border:#292929;
-    --gray:#aaaaaa;
-    --green:#20d56b;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-
-    background:rgba(5,5,5,0.82);
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid rgba(255,255,255,0.08);
-}
-
-.navbar{
-    height:75px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo-area{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo-area img{
-    width:48px;
-    height:48px;
-    object-fit:contain;
-    border-radius:50%;
-}
-
-.logo-text{
-    font-size:13px;
-    font-weight:bold;
-}
-
-.logo-text span{
-    color:var(--gold);
-}
-
-nav{
-    display:flex;
-    gap:28px;
-}
-
-nav a{
-    color:#ddd;
-    font-size:14px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:var(--gold);
-}
-
-.menu-btn{
-    display:none;
-    border:none;
-    background:none;
-    color:white;
-    font-size:28px;
-    cursor:pointer;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-
-    min-height:850px;
-
-    display:flex;
-    align-items:center;
-
-    position:relative;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.78),
-        rgba(0,0,0,.75)
-    ),
-    url("shop.jpg");
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero-content{
-    position:relative;
-    padding-top:80px;
-    max-width:800px;
-}
-
-/* LOGO */
-
-.hero-logo{
-    width:120px;
-    height:120px;
-
-    margin-bottom:8px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(231,184,75,.5);
-
-    box-shadow:
-        0 0 40px rgba(231,184,75,.12);
-}
-
-.hero-logo img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    border-radius:50%;
-}
-
-/* SINCE */
-
-.since{
-    color:var(--gold);
-    font-weight:bold;
-
-    letter-spacing:4px;
-
-    font-size:14px;
-
-    margin-bottom:18px;
-}
-
-/* TAG */
-
-.tag{
-    color:var(--gold);
-
-    font-size:11px;
-
-    font-weight:bold;
-
-    letter-spacing:3px;
-
-    margin-bottom:10px;
-}
-
-/* TITLE */
-
-.hero h1{
-    font-size:clamp(45px,7vw,80px);
-
-    line-height:1.02;
-
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    display:block;
-    color:var(--gold);
-}
-
-/* DESCRIPTION */
-
-.hero p{
-    max-width:680px;
-
-    color:#d0d0d0;
-
-    font-size:18px;
-
-    margin-bottom:30px;
-}
-
-/* BUTTONS */
-
-.buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-.btn{
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:14px 21px;
-
-    border-radius:8px;
-
-    font-size:14px;
-
-    font-weight:bold;
-
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.gold-btn{
-    background:linear-gradient(
-        135deg,
-        var(--gold-light),
-        var(--gold)
-    );
-
-    color:#111;
-}
-
-.green-btn{
-    background:var(--green);
-    color:#04200d;
-}
-
-.dark-btn{
-    border:1px solid #555;
-    background:rgba(0,0,0,.4);
-}
-
-/* HERO LOCATION */
-
-.hero-location{
-    margin-top:24px;
-
-    color:#ddd;
-
-    font-size:14px;
-}
-
-/* =========================
-   STATS
-========================= */
-
-.stats{
-    background:#101010;
-
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-}
-
-.stat{
-    text-align:center;
-
-    padding:25px;
-
-    border-right:1px solid var(--border);
-}
-
-.stat:last-child{
-    border:none;
-}
-
-.stat strong{
-    display:block;
-
-    color:var(--gold);
-
-    font-size:21px;
-}
-
-.stat span{
-    color:#aaa;
-
-    font-size:12px;
-}
-
-/* =========================
-   SECTION
-========================= */
-
-section{
-    padding:90px 0;
-}
-
-.section-title{
-    text-align:center;
-
-    max-width:700px;
-
-    margin:0 auto 45px;
-}
-
-.section-title .tag{
-    margin-bottom:5px;
-}
-
-.section-title h2{
-    font-size:45px;
-
-    line-height:1.1;
-
-    margin-bottom:12px;
-}
-
-.section-title h2 span{
-    color:var(--gold);
-}
-
-.section-title p{
-    color:#999;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about{
-    background:#0d0d0d;
-}
-
-.about-grid{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:55px;
-
-    align-items:center;
-}
-
-.shop-photo{
-    height:520px;
-
-    border-radius:20px;
-
-    overflow:hidden;
-
-    border:1px solid var(--border);
-
-    box-shadow:0 25px 70px rgba(0,0,0,.5);
-}
-
-.shop-photo img{
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-}
-
-.about-text h2{
-    font-size:42px;
-
-    line-height:1.1;
-
-    margin-bottom:20px;
-}
-
-.about-text h2 span{
-    color:var(--gold);
-}
-
-.about-text p{
-    color:#aaa;
-
-    margin-bottom:16px;
-}
-
-.chips{
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:9px;
-
-    margin-top:25px;
-}
-
-.chip{
-    border:1px solid #3b3b3b;
-
-    border-radius:50px;
-
-    padding:8px 14px;
-
-    font-size:11px;
-
-    color:#ddd;
-}
-
-/* =========================
-   PRODUCTS
-========================= */
-
-.products{
-    background:#080808;
-}
-
-.toolbar{
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:15px;
-
-    margin-bottom:25px;
-}
-
-.filters{
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:8px;
-}
-
-.filter{
-    background:#151515;
-
-    color:#ddd;
-
-    border:1px solid #333;
-
-    padding:9px 15px;
-
-    border-radius:50px;
-
-    cursor:pointer;
-}
-
-.filter:hover,
-.filter.active{
-    background:var(--gold);
-
-    color:#111;
-
-    border-color:var(--gold);
-}
-
-.search{
-    width:250px;
-
-    padding:12px 15px;
-
-    border-radius:8px;
-
-    background:#141414;
-
-    border:1px solid #333;
-
-    color:white;
-
-    outline:none;
-}
-
-.search:focus{
-    border-color:var(--gold);
-}
-
-/* PRODUCTS GRID */
-
-.products-grid{
-    display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:18px;
-}
-
-.product-card{
-    background:
-    linear-gradient(
-        180deg,
-        #171717,
-        #0f0f0f
-    );
-
-    border:1px solid var(--border);
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    transition:.3s;
-}
-
-.product-card:hover{
-    transform:translateY(-7px);
-
-    border-color:#80682d;
-
-    box-shadow:
-        0 20px 50px rgba(0,0,0,.4);
-}
-
-.product-image{
-    height:250px;
-
-    background:white;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-}
-
-.product-image img{
-    width:100%;
-    height:100%;
-
-    object-fit:contain;
-}
-
-.product-info{
-    padding:16px;
-}
-
-.product-category{
-    color:var(--gold);
-
-    font-size:9px;
-
-    font-weight:bold;
-
-    letter-spacing:1.5px;
-}
-
-.product-info h3{
-    font-size:17px;
-
-    margin:7px 0;
-}
-
-.product-info p{
-    color:#999;
-
-    font-size:12px;
-
-    min-height:42px;
-
-    margin-bottom:12px;
-}
-
-.product-buttons{
-    display:flex;
-
-    gap:7px;
-}
-
-.product-btn{
-    flex:1;
-
-    text-align:center;
-
-    padding:9px;
-
-    border-radius:6px;
-
-    background:#1c1c1c;
-
-    border:1px solid #333;
-
-    font-size:11px;
-
-    font-weight:bold;
-}
-
-.product-btn:hover{
-    color:var(--gold);
-
-    border-color:var(--gold);
-}
-
-/* =========================
-   LOCATION
-========================= */
-
-.location{
-    background:#101010;
-}
-
-.location-grid{
-    display:grid;
-
-    grid-template-columns:
-    .85fr 1.15fr;
-
-    gap:22px;
-}
-
-/* CONTACT CARD */
-
-.contact-card{
-    background:#151515;
-
-    border:1px solid var(--border);
-
-    border-radius:17px;
-
-    padding:30px;
-}
-
-.contact-card h3{
-    font-size:27px;
-
-    margin-bottom:20px;
-}
-
-.contact-info{
-    display:flex;
-
-    gap:14px;
-
-    padding:16px 0;
-
-    border-bottom:1px solid #292929;
-}
-
-.contact-info:last-of-type{
-    border:none;
-}
-
-.contact-icon{
-    font-size:23px;
-}
-
-.contact-info strong{
-    display:block;
-}
-
-.contact-info span{
-    color:#999;
-
-    font-size:13px;
-}
-
-/* MAP */
-
-.map-card{
-    background:#151515;
-
-    border:1px solid var(--border);
-
-    border-radius:17px;
-
-    overflow:hidden;
-}
-
-.map-header{
-    padding:20px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-}
-
-.map-header h3{
-    margin:0;
-}
-
-.map-header span{
-    color:#888;
-
-    font-size:12px;
-}
-
-.map{
-    width:100%;
-
-    height:430px;
-
-    border:0;
-
-    display:block;
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-    background:
-    radial-gradient(
-        circle at 20% 50%,
-        #2b220d,
-        #0d0d0d 65%
-    );
-
-    border-top:1px solid #3b301b;
-
-    border-bottom:1px solid #3b301b;
-}
-
-.cta-content{
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:25px;
-}
-
-.cta h2{
-    font-size:40px;
-
-    margin-bottom:5px;
-}
-
-.cta p{
-    color:#999;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#050505;
-
-    padding:30px 0;
-
-    border-top:1px solid #222;
-}
-
-.footer{
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:20px;
-}
-
-.footer-brand{
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    font-weight:bold;
-}
-
-.footer-brand img{
-    width:40px;
-    height:40px;
-
-    border-radius:50%;
-}
-
-.footer p{
-    color:#777;
-
-    font-size:11px;
-}
-
-/* =========================
-   FLOATING WHATSAPP
-========================= */
-
-.whatsapp-float{
-    position:fixed;
-
-    right:18px;
-    bottom:18px;
-
-    width:58px;
-    height:58px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:var(--green);
-
-    color:#05200f;
-
-    font-size:25px;
-
-    z-index:999;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.5);
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:950px){
-
-    .products-grid{
-        grid-template-columns:
-        repeat(3,1fr);
-    }
-
-    .location-grid{
-        grid-template-columns:1fr;
-    }
-
-}
-
-@media(max-width:720px){
-
-    nav{
-        display:none;
-
-        position:absolute;
-
-        top:75px;
-
-        left:0;
-        right:0;
-
-        background:#090909;
-
-        padding:20px 5%;
-
-        flex-direction:column;
-
-        gap:17px;
-    }
-
-    nav.show{
-        display:flex;
-    }
-
-    .menu-btn{
-        display:block;
-    }
-
-    .stats-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .stat:nth-child(2){
-        border-right:none;
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .shop-photo{
-        height:380px;
-    }
-
-    .products-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .toolbar{
-        flex-direction:column;
-        align-items:stretch;
-    }
-
-    .search{
-        width:100%;
-    }
-
-    .cta-content{
-        flex-direction:column;
-
-        align-items:flex-start;
-    }
-
-    .footer{
-        flex-direction:column;
-
-        align-items:flex-start;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .hero{
-        min-height:760px;
-    }
-
-    .hero h1{
-        font-size:43px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .hero-logo{
-        width:100px;
-        height:100px;
-    }
-
-    .products-grid{
-        grid-template-columns:1fr;
-    }
-
-    .product-image{
-        height:290px;
-    }
-
-    .section-title h2{
-        font-size:36px;
-    }
-
-}
-
-</style>
-</head>
-
-<body>
-
-
-<!-- =========================
-     HEADER
-========================= -->
-
-<header>
-
-<div class="container navbar">
-
-<a href="#home" class="logo-area">
-
-<img src="logo.webp" alt="Amarnath Bearing Stores Logo">
-
-<div class="logo-text">
-AMARNATH<br>
-<span>BEARING STORES</span>
-</div>
-
-</a>
-
-<button
-class="menu-btn"
-onclick="toggleMenu()">
-☰
-</button>
-
-<nav id="navigation">
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#products">Products</a>
-
-<a href="#location">Location</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-</div>
-
-</header>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero" id="home">
-
-<div class="container hero-content">
-
-<div class="hero-logo">
-
-<img
-src="logo.webp"
-alt="Amarnath Bearing Stores">
-
-</div>
-
-<div class="since">
-SINCE 1970
-</div>
-
-<div class="tag">
-HARDWARE & MACHINERY STORE
-</div>
-
-<h1>
-AMARNATH
-<span>BEARING STORES</span>
-</h1>
-
-<p>
-Your trusted destination for pumps, flour mills,
-agricultural machinery and quality hardware products
-in Mariahu, Jaunpur.
-</p>
-
-<div class="buttons">
-
-<a
-class="btn gold-btn"
-href="#products">
-🛠️ Explore Products
-</a>
-
-<a
-class="btn green-btn"
-target="_blank"
-href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores%2C%20I%20want%20a%20product%20enquiry.">
-💬 WhatsApp
-</a>
-
-<a
-class="btn dark-btn"
-href="tel:+918795214522">
-📞 Call Now
-</a>
-
-</div>
-
-<div class="hero-location">
-📍 Sadarganj, Mariahu, Jaunpur, Uttar Pradesh
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     STATS
-========================= -->
-
-<div class="stats">
-
-<div class="container stats-grid">
-
-<div class="stat">
-
-<strong>Since 1970</strong>
-
-<span>Trusted Experience</span>
-
-</div>
-
-<div class="stat">
-
-<strong>Multi-Brand</strong>
-
-<span>Quality Products</span>
-
-</div>
-
-<div class="stat">
-
-<strong>Machinery</strong>
-
-<span>Wide Range</span>
-
-</div>
-
-<div class="stat">
-
-<strong>Easy Enquiry</strong>
-
-<span>Call / WhatsApp</span>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section class="about" id="about">
-
-<div class="container about-grid">
-
-<div class="shop-photo">
-
-<img
-src="shop.jpg"
-alt="Amarnath Bearing Stores Shop">
-
-</div>
-
-<div class="about-text">
-
-<div class="tag">
-ABOUT US
-</div>
-
-<h2>
-Your Local
-<span>Machinery Partner</span>
-</h2>
-
-<p>
-Welcome to Amarnath Bearing Stores,
-your trusted hardware and machinery store
-in Mariahu, Jaunpur.
-</p>
-
-<p>
-We provide quality machinery and equipment
-for farming, home and business requirements.
-</p>
-
-<p>
-Our range includes flour mills, pumps,
-sprayers, chaff cutters, pressure washers,
-power equipment and more.
-</p>
-
-<div class="chips">
-
-<span class="chip">FIELDMARSHAL</span>
-
-<span class="chip">DHARA</span>
-
-<span class="chip">HAVELLS</span>
-
-<span class="chip">BALWAAN</span>
-
-<span class="chip">EICHER</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     PRODUCTS
-========================= -->
-
-<section class="products" id="products">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="tag">
-OUR PRODUCTS
-</div>
-
-<h2>
-Featured
-<span>Machinery</span>
-</h2>
-
-<p>
-Browse our products and contact us for
-current price, model and availability.
-</p>
-
-</div>
-
-
-<div class="toolbar">
-
-<div class="filters">
-
-<button
-class="filter active"
-onclick="filterProducts('all',this)">
-All
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('flour',this)">
-Flour Mills
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('pump',this)">
-Pumps
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('agri',this)">
-Agriculture
-</button>
-
-<button
-class="filter"
-onclick="filterProducts('machine',this)">
-Machines
-</button>
-
-</div>
-
-<input
-class="search"
-id="search"
-type="text"
-placeholder="🔎 Search product..."
-oninput="renderProducts()">
-
-</div>
-
-
-<div
-class="products-grid"
-id="productsGrid">
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     LOCATION
-========================= -->
-
-<section class="location" id="location">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="tag">
-FIND US
-</div>
-
-<h2>
-Our
-<span>Location</span>
-</h2>
-
-<p>
-Visit Amarnath Bearing Stores at
-Sadarganj, Mariahu, Jaunpur.
-</p>
-
-</div>
-
-
-<div class="location-grid">
-
-
-<!-- CONTACT CARD -->
-
-<div class="contact-card" id="contact">
-
-<h3>
-Amarnath Bearing Stores
-</h3>
-
-
-<div class="contact-info">
-
-<div class="contact-icon">
-📍
-</div>
-
-<div>
-
-<strong>Address</strong>
-
-<span>
-Rajia Complex, Near Pawan Talkies,
-Sadar Ganj, Mariahu,
-Jaunpur, Uttar Pradesh - 222161
-</span>
-
-</div>
-
-</div>
-
-
-<div class="contact-info">
-
-<div class="contact-icon">
-📞
-</div>
-
-<div>
-
-<strong>Phone</strong>
-
-<span>
-8795214522
-<br>
-7800081251
-</span>
-
-</div>
-
-</div>
-
-
-<div class="contact-info">
-
-<div class="contact-icon">
-💬
-</div>
-
-<div>
-
-<strong>WhatsApp</strong>
-
-<span>
-Send us your product enquiry
-</span>
-
-</div>
-
-</div>
-
-
-<div class="buttons" style="margin-top:22px">
-
-
-<a
-class="btn gold-btn"
-target="_blank"
-href="https://maps.app.goo.gl/2TRrQeaiB9WMjrFi6?g_st=ac">
-
-📍 Get Directions
-
-</a>
-
-
-<a
-class="btn green-btn"
-target="_blank"
-href="https://wa.me/918795214522">
-
-💬 WhatsApp
-
-</a>
-
-
-</div>
-
-</div>
-
-
-<!-- MAP -->
-
-<div class="map-card">
-
-<div class="map-header">
-
-<h3>
-📍 Shop Location
-</h3>
-
-<span>
-Mariahu • Jaunpur
-</span>
-
-</div>
-
-
-<iframe
-class="map"
-src="https://www.google.com/maps?q=Amarnath%20Bearing%20Stores%2C%20Rajia%20Complex%2C%20Near%20Pawan%20Talkies%2C%20Sadar%20Ganj%2C%20Mariahu%2C%20Jaunpur%2C%20Uttar%20Pradesh%20222161&output=embed"
-loading="lazy"
-allowfullscreen>
-</iframe>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta">
-
-<div class="container cta-content">
-
-<div>
-
-<div class="tag">
-PRODUCT ENQUIRY
-</div>
-
-<h2>
-Looking for a machine?
-</h2>
-
-<p>
-Message us on WhatsApp for price,
-availability and product details.
-</p>
-
-</div>
-
-
-<a
-class="btn green-btn"
-target="_blank"
-href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores%2C%20I%20need%20a%20machine%20enquiry.">
-
-💬 Chat on WhatsApp
-
-</a>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-<div class="container footer">
-
-<div class="footer-brand">
-
-<img
-src="logo.webp"
-alt="Logo">
-
-<span>
-AMARNATH BEARING STORES
-</span>
-
-</div>
-
-<p>
-© <span id="year"></span>
-Amarnath Bearing Stores • Mariahu, Jaunpur
-</p>
-
-</div>
-
-</footer>
-
-
-<!-- =========================
-     FLOATING WHATSAPP
-========================= -->
-
-<a
-class="whatsapp-float"
-target="_blank"
-href="https://wa.me/918795214522"
-aria-label="WhatsApp">
-
-💬
-
-</a>
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
-<script>
-
-const products = [
-
-{
-name:"Havells Pump",
-category:"pump",
-type:"PUMPS",
-image:"havells-pump.jpg"
-},
-
-{
-name:"Dhara Raga",
-category:"flour",
-type:"FLOUR MILL",
-image:"dhara-raga.png"
-},
-
-{
-name:"Dhara Signature Series",
-category:"flour",
-type:"FLOUR MILL",
-image:"dhara-signature.jpg"
-},
-
-{
-name:"Balwaan Chaff Cutter CH-200",
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-chaff-cutter.jpg"
-},
-
-{
-name:"Balwaan Pressure Washer PW-350",
-category:"machine",
-type:"PRESSURE WASHER",
-image:"balwaan-pressure-washer.webp"
-},
-
-{
-name:"Balwaan Water Pump WP-33R",
-category:"pump",
-type:"WATER PUMP",
-image:"balwaan-water-pump.webp"
-},
-
-{
-name:"Balwaan Battery Sprayer BS-22D",
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-battery-sprayer.jpg"
-},
-
-{
-name:"Balwaan Power Weeder BP-750E",
-category:"agri",
-type:"AGRICULTURE",
-image:"balwaan-power-weeder.webp"
-}
-
-];
-
+/* CURRENT CATEGORY */
 
 let currentCategory = "all";
 
+
+/* =========================
+   FILTER PRODUCTS
+========================= */
 
 function filterProducts(category,button){
 
-currentCategory = category;
+    currentCategory = category;
 
-document
-.querySelectorAll(".filter")
-.forEach(btn =>
-btn.classList.remove("active")
-);
 
-button.classList.add("active");
+    /* Remove active class */
 
-renderProducts();
+    document
+    .querySelectorAll(".filter")
+    .forEach(function(btn){
+
+        btn.classList.remove("active");
+
+    });
+
+
+    /* Add active class
+       ONLY to clicked button */
+
+    button.classList.add("active");
+
+
+    /* Display filtered products */
+
+    renderProducts();
 
 }
 
+
+/* =========================
+   RENDER PRODUCTS
+========================= */
 
 function renderProducts(){
 
-const search =
-document
-.getElementById("search")
-.value
-.toLowerCase();
+    const search =
+    document
+    .getElementById("search")
+    .value
+    .trim()
+    .toLowerCase();
 
 
-const filtered = products.filter(product => {
+    const filteredProducts =
+    products.filter(function(product){
 
-const categoryMatch =
-currentCategory === "all" ||
-product.category === currentCategory;
+        /* CATEGORY CHECK */
 
-const searchMatch =
-product.name
-.toLowerCase()
-.includes(search) ||
-
-product.type
-.toLowerCase()
-.includes(search);
-
-return categoryMatch && searchMatch;
-
-});
+        const categoryMatch =
+        currentCategory === "all" ||
+        product.category === currentCategory;
 
 
-document.getElementById("productsGrid").innerHTML =
+        /* SEARCH CHECK */
 
-filtered.map(product => `
+        const searchMatch =
+        product.name
+        .toLowerCase()
+        .includes(search)
+        ||
+        product.type
+        .toLowerCase()
+        .includes(search);
 
-<article class="product-card">
 
-<div class="product-image">
+        return categoryMatch && searchMatch;
 
-<img
-src="${product.image}"
-alt="${product.name}"
-loading="lazy">
+    });
 
-</div>
 
-<div class="product-info">
+    const grid =
+    document
+    .getElementById("productsGrid");
 
-<div class="product-category">
-${product.type}
-</div>
 
-<h3>
-${product.name}
-</h3>
+    /* If no product found */
 
-<p>
-Contact us for current price,
-model details and availability.
-</p>
+    if(filteredProducts.length === 0){
 
-<div class="product-buttons">
+        grid.innerHTML = `
 
-<a
-class="product-btn"
-target="_blank"
-href="https://wa.me/918795214522?text=${encodeURIComponent(
-"Hello Amarnath Bearing Stores, I want to enquire about " + product.name
-)}">
+        <div style="
+        grid-column:1/-1;
+        text-align:center;
+        padding:60px 20px;
+        color:#999;">
 
-WhatsApp
+            <div style="
+            font-size:45px;
+            margin-bottom:10px;">
+            🔍
+            </div>
 
-</a>
+            <h3 style="
+            color:white;
+            margin-bottom:8px;">
+            No Product Found
+            </h3>
 
-<a
-class="product-btn"
-href="#location">
+            <p>
+            Try another product or category.
+            </p>
 
-Location
+        </div>
 
-</a>
+        `;
 
-</div>
+        return;
 
-</div>
+    }
 
-</article>
 
-`).join("");
+    /* DISPLAY PRODUCTS */
+
+    grid.innerHTML = filteredProducts
+    .map(function(product){
+
+        return `
+
+        <article class="product-card">
+
+
+            <div class="product-image">
+
+                <img
+                src="${product.image}"
+                alt="${product.name}"
+                loading="lazy">
+
+            </div>
+
+
+            <div class="product-info">
+
+
+                <div class="product-category">
+
+                    ${product.type}
+
+                </div>
+
+
+                <h3>
+
+                    ${product.name}
+
+                </h3>
+
+
+                <p>
+
+                    Contact us for current
+                    price, model details
+                    and availability.
+
+                </p>
+
+
+                <div class="product-buttons">
+
+
+                    <a
+                    class="product-btn"
+                    target="_blank"
+                    href="https://wa.me/918795214522?text=${encodeURIComponent(
+                    "Hello Amarnath Bearing Stores, I want to enquire about " + product.name
+                    )}">
+
+                    💬 WhatsApp
+
+                    </a>
+
+
+                    <a
+                    class="product-btn"
+                    href="#location">
+
+                    📍 Location
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </article>
+
+        `;
+
+    })
+    .join("");
 
 }
 
 
-/* MOBILE MENU */
+/* =========================
+   MOBILE MENU
+========================= */
 
 function toggleMenu(){
 
-document
-.getElementById("navigation")
-.classList.toggle("show");
+    document
+    .getElementById("navigation")
+    .classList.toggle("show");
 
 }
 
@@ -3345,20 +1982,22 @@ document
 
 document
 .querySelectorAll("#navigation a")
-.forEach(link => {
+.forEach(function(link){
 
-link.addEventListener("click", () => {
+    link.addEventListener("click",function(){
 
-document
-.getElementById("navigation")
-.classList.remove("show");
+        document
+        .getElementById("navigation")
+        .classList.remove("show");
+
+    });
 
 });
 
-});
 
-
-/* YEAR */
+/* =========================
+   YEAR
+========================= */
 
 document
 .getElementById("year")
@@ -3366,34 +2005,14 @@ document
 new Date().getFullYear();
 
 
-/* LOAD PRODUCTS */
+/* =========================
+   LOAD ALL PRODUCTS
+========================= */
 
 renderProducts();
+
 
 </script>
 
 </body>
 </html>
-
-function filterProducts(category,button){
-
-currentCategory = category;
-
-document
-.querySelectorAll(".filter")
-.forEach(btn =>
-btn.classList.remove("active")
-);
-
-button.classList.add("active");
-
-renderProducts();
-
-}
-
-
-function renderProducts(){
-
-const search =
-document
-.getElementById("search")
