@@ -1,522 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AMARNATH BEARING STORES | Hardware & Machinery</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: #f5f7fa;
-            color: #222;
-        }
-
-        /* NAVBAR */
-        nav {
-            background: #111827;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 7%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav h2 {
-            color: #fbbf24;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #fbbf24;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 20px;
-
-            background:
-                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80");
-
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-content {
-            color: white;
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 55px;
-            margin-bottom: 15px;
-            color: #fbbf24;
-        }
-
-        .hero h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
-        .buttons a {
-            display: inline-block;
-            padding: 14px 25px;
-            margin: 7px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .call {
-            background: #2563eb;
-            color: white;
-        }
-
-        .whatsapp {
-            background: #16a34a;
-            color: white;
-        }
-
-        /* SECTIONS */
-        section {
-            padding: 70px 7%;
-        }
-
-        .title {
-            text-align: center;
-            font-size: 35px;
-            margin-bottom: 40px;
-            color: #111827;
-        }
-
-        /* ABOUT */
-        .about {
-            background: white;
-            text-align: center;
-        }
-
-        .about p {
-            max-width: 850px;
-            margin: auto;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        /* PRODUCTS */
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px 20px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-        }
-
-        .card .icon {
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #111827;
-        }
-
-        .card p {
-            color: #555;
-        }
-
-        /* WHY US */
-        .why {
-            background: #111827;
-            color: white;
-        }
-
-        .why .title {
-            color: white;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-        }
-
-        .feature {
-            text-align: center;
-            padding: 25px;
-        }
-
-        .feature h3 {
-            color: #fbbf24;
-            margin: 12px 0;
-        }
-
-        .feature p {
-            color: #ddd;
-        }
-
-        /* CONTACT */
-        .contact {
-            background: white;
-            text-align: center;
-        }
-
-        .contact-box {
-            max-width: 700px;
-            margin: auto;
-            background: #f3f4f6;
-            padding: 35px;
-            border-radius: 15px;
-        }
-
-        .contact-box p {
-            font-size: 19px;
-            margin: 15px;
-        }
-
-        .contact-box a {
-            color: #2563eb;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #030712;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        footer h2 {
-            color: #fbbf24;
-            margin-bottom: 10px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 700px) {
-
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav ul {
-                gap: 15px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero h2 {
-                font-size: 22px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .title {
-                font-size: 28px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amarnath Bearing Stores - Hardware & Machinery Store in Sadarganj, Mariahu, Jaunpur. Pumps, flour mills, agricultural machinery and more.">
+  <meta name="keywords" content="Amarnath Bearing Stores, Mariahu, Jaunpur, hardware store, machinery, Dhara flour mill, Havells pump, Balwaan">
+  <meta name="theme-color" content="#111111">
+  <title>Amarnath Bearing Stores | Hardware & Machinery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="images/logo.webp" alt="Amarnath Bearing Stores logo">
+        <span>AMARNATH <b>BEARING STORES</b></span>
+      </a>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+      <nav id="navLinks">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#products" onclick="closeMenu()">Products</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- NAVBAR -->
-    <nav>
-        <h2>AMARNATH</h2>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-logo"><img src="images/logo.webp" alt="ABS logo"></div>
+        <p class="eyebrow">HARDWARE • MACHINERY • AGRICULTURAL EQUIPMENT</p>
+        <h1>AMARNATH <span>BEARING STORES</span></h1>
+        <p class="hero-text">Quality machinery and hardware products for home, farming and business needs.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#products">Explore Products</a>
+          <a class="btn whatsapp" href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores,%20I%20want%20to%20know%20about%20your%20products." target="_blank">WhatsApp Enquiry</a>
+        </div>
+        <div class="location">📍 Sadarganj, Mariahu, Jaunpur, Uttar Pradesh</div>
+      </div>
+    </section>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="trust">
+      <div class="container trust-grid">
+        <div><strong>✓</strong><span>Quality Products</span></div>
+        <div><strong>✓</strong><span>Trusted Local Store</span></div>
+        <div><strong>✓</strong><span>Product Enquiry</span></div>
+        <div><strong>✓</strong><span>Easy Contact</span></div>
+      </div>
+    </section>
 
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="images/shop.jpg" alt="Amarnath Bearing Stores shop">
+        </div>
+        <div>
+          <p class="eyebrow">ABOUT OUR STORE</p>
+          <h2>Your Local <span>Machinery Partner</span></h2>
+          <p>Welcome to <b>Amarnath Bearing Stores</b>, a hardware and machinery store serving customers in Mariahu and nearby areas.</p>
+          <p>We deal in a range of machinery and agricultural equipment including flour mills, pumps, sprayers, chaff cutters, pressure washers and power equipment.</p>
+          <div class="dealers">
+            <span>DHARA</span><span>HAVELLS</span><span>BALWAAN</span><span>FIELDMARSHAL</span><span>EICHER</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <h1>AMARNATH BEARING STORES</h1>
-
-            <h2>Hardware & Machinery Store</h2>
-
-            <p>
-                Quality Hardware, Machinery & Industrial Products
-                at Reliable Prices.
-            </p>
-
-            <div class="buttons">
-
-                <a class="call"
-                   href="tel:8795214522">
-                    📞 Call Now
-                </a>
-
-                <a class="whatsapp"
-                   href="https://wa.me/918795214522"
-                   target="_blank">
-                    💬 WhatsApp
-                </a>
-
-            </div>
-
+    <section id="products" class="section products-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">OUR PRODUCTS</p>
+            <h2>Featured <span>Machinery</span></h2>
+          </div>
+          <div class="search-wrap">
+            <input id="search" type="search" placeholder="Search product..." oninput="renderProducts()">
+          </div>
         </div>
 
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-
-        <h2 class="title">About Our Shop</h2>
-
-        <p>
-            Welcome to <b>AMARNATH BEARING STORES</b>,
-            a trusted Hardware & Machinery Store located in
-            Sadarganj, Mariahu, Jaunpur.
-            We provide quality machinery, hardware and related
-            products for farmers, businesses and industrial needs.
-        </p>
-
-    </section>
-
-
-    <!-- PRODUCTS -->
-    <section id="products">
-
-        <h2 class="title">Our Products</h2>
-
-        <div class="products">
-
-            <div class="card">
-                <div class="icon">⚙️</div>
-                <h3>Bearings</h3>
-                <p>
-                    Quality bearings for different machinery
-                    and industrial applications.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🔧</div>
-                <h3>Hardware</h3>
-                <p>
-                    Hardware products and accessories
-                    for various requirements.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🚜</div>
-                <h3>Agricultural Machinery</h3>
-                <p>
-                    Machinery and equipment for agricultural
-                    and farming needs.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">⚡</div>
-                <h3>Motors & Pumps</h3>
-                <p>
-                    Motors, pumps and related machinery
-                    products.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🛠️</div>
-                <h3>Machine Parts</h3>
-                <p>
-                    Spare parts and components for
-                    different machines.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🔩</div>
-                <h3>Industrial Products</h3>
-                <p>
-                    Useful industrial products and
-                    machinery accessories.
-                </p>
-            </div>
-
+        <div class="filters">
+          <button class="filter active" data-category="all" onclick="setCategory('all')">All</button>
+          <button class="filter" data-category="flour" onclick="setCategory('flour')">Flour Mills</button>
+          <button class="filter" data-category="pump" onclick="setCategory('pump')">Pumps</button>
+          <button class="filter" data-category="agri" onclick="setCategory('agri')">Agriculture</button>
+          <button class="filter" data-category="machine" onclick="setCategory('machine')">Machines</button>
         </div>
 
+        <div id="productGrid" class="product-grid"></div>
+        <p id="noResults" class="no-results" hidden>No product found. Try another search.</p>
+      </div>
     </section>
 
-
-    <!-- WHY US -->
-    <section class="why">
-
-        <h2 class="title">Why Choose Us?</h2>
-
-        <div class="features">
-
-            <div class="feature">
-                <div style="font-size:45px;">⭐</div>
-                <h3>Quality Products</h3>
-                <p>
-                    We focus on providing reliable
-                    and quality products.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div style="font-size:45px;">💰</div>
-                <h3>Best Prices</h3>
-                <p>
-                    Competitive prices for customers
-                    and businesses.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div style="font-size:45px;">🤝</div>
-                <h3>Trusted Service</h3>
-                <p>
-                    Friendly service and support
-                    for our customers.
-                </p>
-            </div>
-
-            <div class="feature">
-                <div style="font-size:45px;">📍</div>
-                <h3>Local Store</h3>
-                <p>
-                    Conveniently located at Sadarganj,
-                    Mariahu, Jaunpur.
-                </p>
-            </div>
-
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">NEED A PRODUCT?</p>
+          <h2>Ask us for price & availability</h2>
+          <p>Send your requirement on WhatsApp and our store team can guide you.</p>
         </div>
-
+        <a class="btn whatsapp" href="https://wa.me/918795214522?text=Hello%20Amarnath%20Bearing%20Stores,%20I%20want%20a%20product%20enquiry." target="_blank">💬 Chat on WhatsApp</a>
+      </div>
     </section>
 
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-
-        <h2 class="title">Contact Us</h2>
-
-        <div class="contact-box">
-
-            <p>
-                🏪 <b>AMARNATH BEARING STORES</b>
-            </p>
-
-            <p>
-                📍 Sadarganj, Mariahu, Jaunpur
-            </p>
-
-            <p>
-                📞
-                <a href="tel:8795214522">
-                    8795214522
-                </a>
-            </p>
-
-            <p>
-                📞
-                <a href="tel:7800081251">
-                    7800081251
-                </a>
-            </p>
-
-            <div class="buttons">
-
-                <a class="call"
-                   href="tel:8795214522">
-                    📞 Call Us
-                </a>
-
-                <a class="whatsapp"
-                   href="https://wa.me/918795214522"
-                   target="_blank">
-                    💬 WhatsApp Us
-                </a>
-
-            </div>
-
+    <section id="contact" class="section contact">
+      <div class="container">
+        <p class="eyebrow">CONTACT US</p>
+        <h2>Visit or <span>Call Us</span></h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="icon">📍</div>
+            <h3>Address</h3>
+            <p>Sadarganj, Mariahu,<br>Jaunpur, Uttar Pradesh</p>
+            <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Amarnath%20Bearing%20Stores%20Sadarganj%20Mariahu%20Jaunpur" target="_blank">Open in Google Maps →</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon">📞</div>
+            <h3>Call</h3>
+            <p>8795214522<br>7800081251</p>
+            <a class="text-link" href="tel:+918795214522">Call Now →</a>
+          </div>
+          <div class="contact-card">
+            <div class="icon">💬</div>
+            <h3>WhatsApp</h3>
+            <p>Product enquiry<br>and information</p>
+            <a class="text-link" href="https://wa.me/918795214522" target="_blank">Message Us →</a>
+          </div>
         </div>
-
+      </div>
     </section>
+  </main>
 
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="images/logo.webp" alt=""> <span>AMARNATH BEARING STORES</span></div>
+      <p>© <span id="year"></span> Amarnath Bearing Stores. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- FOOTER -->
-    <footer>
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-info">
+        <p id="modalCategory" class="eyebrow"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <a id="modalWhatsapp" class="btn whatsapp" href="#" target="_blank">💬 Enquire on WhatsApp</a>
+      </div>
+    </div>
+  </div>
 
-        <h2>AMARNATH BEARING STORES</h2>
-
-        <p>
-            Hardware & Machinery Store
-        </p>
-
-        <p>
-            Sadarganj, Mariahu, Jaunpur
-        </p>
-
-        <br>
-
-        <p>
-            © 2026 AMARNATH BEARING STORES.
-            All Rights Reserved.
-        </p>
-
-    </footer>
-
+  <a class="floating-whatsapp" href="https://wa.me/918795214522" target="_blank" aria-label="WhatsApp">💬</a>
+  <script src="script.js"></script>
 </body>
 </html>
